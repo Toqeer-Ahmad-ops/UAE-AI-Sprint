@@ -1,0 +1,124 @@
+{
+  "name": "My workflow 2",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "day2_webhook",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "66f11c79-4d0d-4526-9d52-384abf53a984",
+      "name": "Webhook",
+      "webhookId": "ec7365c1-62b9-48de-864c-8128e087dcd9"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "8b23607a-a5cf-49db-b5b1-9603eba857ff",
+              "name": "clean_name",
+              "value": "={{ $json.name.trim().toLowerCase() }}",
+              "type": "string"
+            },
+            {
+              "id": "48b09af1-00aa-4ea5-a188-cc1ca5e58603",
+              "name": "clean_email",
+              "value": "={{ $json.email.trim().toLowerCase() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "df8c0b0e-e3ae-4a8c-84dd-3d70927f0604",
+      "name": "Clean Text"
+    },
+    {
+      "parameters": {
+        "useCustomSchema": true,
+        "tableId": "leads",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "name",
+              "fieldValue": "={{ $json.clean_name }} or {{ $json.body.name }}"
+            },
+            {
+              "fieldId": "email",
+              "fieldValue": "={{ $json.clean_email }}"
+            },
+            {
+              "fieldId": "source",
+              "fieldValue": "webhook"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        416,
+        0
+      ],
+      "id": "8d8ccbd5-3d92-4a95-a6c7-7e02be99f840",
+      "name": "Create a row",
+      "credentials": {
+        "supabaseApi": {
+          "id": "BpOiFHCuERzmVKjl",
+          "name": "Supabase account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Clean Text",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Clean Text": {
+      "main": [
+        [
+          {
+            "node": "Create a row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "2900092b-0831-4b06-8c99-0f75396164e9",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "65009f894cb80909d7d8d00a009243cc2121ce7f274390314aab1db0f3eb5fdb"
+  },
+  "nodeGroups": [],
+  "id": "CPONoszz7iJT1r9x",
+  "tags": []
+}
