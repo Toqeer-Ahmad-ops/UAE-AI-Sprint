@@ -28,7 +28,7 @@ Supabase(Log Error) → rag_logs
 ## Setup
 1. **Supabase**: Run `supabase/schema.sql` to create `documents` + `rag_logs` tables + `match_documents()` RPC
 2. **n8n**: Import `n8n/workflow.json` → Add Gemini + Supabase credentials
-3. **Test**: POST to webhook: `{"doc_id": "test", "content": "hello world"}`
+3. **Test**: POST to webhook: `{"doc_id": "test", "content": "Hello world. مرحبا بالعالم"}`
 
 ## Screenshot
 | n8n Workflow | Vector Storage | Audit Logs |
