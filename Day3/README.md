@@ -30,10 +30,10 @@ Supabase(Log Error) → rag_logs
 2. **n8n**: Import `n8n/workflow.json` → Add Gemini + Supabase credentials
 3. **Test**: POST to webhook: `{"doc_id": "test", "content": "hello world"}`
 
-## Screenshot
+## Screenshots
 | n8n Workflow | Vector Storage | Audit Logs |
 | --- | --- | --- |
-| ![n8n](screenshots/01-n8n-workflow.png) | ![supabase](screenshots/02-supabase-docs.png) | ![logs](screenshots/03-rag-logs.png) |
+| ![n8n](screenshot/01-n8n-workflow.png) | ![supabase](screenshot/02-supabase-docs.png) | ![logs](screenshot/03-rag-logs.png) |
 
 ## UAE Market Alignment
 This project demonstrates skills from current Dubai job posts:
