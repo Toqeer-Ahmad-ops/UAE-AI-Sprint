@@ -16,7 +16,8 @@ Specializing in RAG, bilingual EN/AR systems, and UAE compliance automation.
 | --- | --- | --- | --- |
 | Day 2 | TBA | n8n + JS | ✅ Complete |
 | Day 3 | Bilingual RAG Ingestion | n8n + Gemini + pgvector | ✅ Complete |
-| Day 4 | RAG Search API | n8n + Supabase RPC | 🔄 Next |
+| Day 4 | Enterprise RAG Retrieval API | n8n + Gemini + pgvector | ✅ Complete |
+| Day 5 | Enterprise HR Assistant API | n8n + RAG | 🚧 In Progress |
 
 ## UAE Skills Covered
 - ✅ n8n workflow design + error handling + QA
