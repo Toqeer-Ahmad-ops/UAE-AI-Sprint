@@ -54,7 +54,12 @@ The focus is on:
 
 ---
 
-# 🚀 Completed Projects
+# 🚀 Featured Projects
+
+| Project | Repository |
+|---------|------------|
+| Enterprise RAG API – Bilingual HR Assistant | https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant |
+| End-to-End Arabic Workflow | https://github.com/Toqeer-Ahmad-ops/end-to-end-arabic-workflow-dubai |
 
 ## 📚 Day 3 — Enterprise RAG Document Ingestion
 
@@ -75,6 +80,8 @@ Production-ready ingestion pipeline that:
 - PostgreSQL
 - pgvector
 
+🔗 Repository:
+https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
 ---
 
 ## 🤖 Day 4 — Enterprise RAG Retrieval API
@@ -99,6 +106,8 @@ The workflow:
 - Bilingual Responses (EN/AR)
 - Production API Design
 
+🔗 Repository:
+https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
 ---
 
 # 🛠️ Skills Demonstrated
@@ -159,20 +168,13 @@ Projects are designed around real UAE business scenarios such as:
 
 ---
 
-# 📂 Repository Structure
+# 📂 Portfolio Structure
 
-```text
-UAE-AI-Sprint/
-│
-├── README.md
-├── Day1/
-├── Day2/
-├── Day3/
-├── Day4/
-├── Day5/
-├── ...
-└── Day30/
-```
+This repository serves as the central portfolio for my 30-Day UAE AI Automation Sprint.
+
+Each major project is published in its own dedicated GitHub repository with documentation, workflows, screenshots, and source code.
+
+The sprint repository tracks my learning journey and links to each completed project.
 
 ---
 
