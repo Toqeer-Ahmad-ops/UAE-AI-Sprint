@@ -126,7 +126,7 @@ https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
 # 🏗 Architecture
 
 <p align="center">
-  <img src="https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant/blob/main/assets/architecture-v2.png?raw=true" alt="Enterprise Bilingual RAG Architecture" width="100%" />
+  <img src="docs/architecture.jpeg" alt="Enterprise Bilingual RAG Architecture" width="100%" />
 </p>
 
 <details>
