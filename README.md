@@ -126,8 +126,7 @@ https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
 # 🏗 Architecture
 
 <p align="center">
-  <img src="docs/architecture.jpeg" alt="Enterprise Bilingual RAG Architecture" width="100%" />
-</p>
+  <img src="docs/Day 5 architecture.jpeg" alt="Enterprise Bilingual RAG Architecture" width="100%" /> </p>
 
 <details>
 <summary>📄 View Mermaid Source</summary>
@@ -138,6 +137,8 @@ flowchart TD
     F --- G[User Question]
     G --> H[Detect Language<br/>EN / AR] --> I[Gemini Query Embedding] --> J[Metadata-Aware Vector Search] --> K[Build Retrieval Context] --> L[Gemini 2.5 Flash] --> M[Grounded Final Answer] --> N[Log Query + Retrieval Metrics]
 ```
+
+---
 
 🔗 Repository:
 https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
