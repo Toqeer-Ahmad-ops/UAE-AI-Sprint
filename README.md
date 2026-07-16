@@ -137,6 +137,7 @@ flowchart TD
     A[PDF Upload] --> B[Extract Text From PDF] --> C[OCR Cleaning] --> D[Chunk Documents<br/>1000 / 200] --> E[Gemini Embedding 2<br/>768] --> F[(Supabase pgvector Database)]
     F --- G[User Question]
     G --> H[Detect Language<br/>EN / AR] --> I[Gemini Query Embedding] --> J[Metadata-Aware Vector Search] --> K[Build Retrieval Context] --> L[Gemini 2.5 Flash] --> M[Grounded Final Answer] --> N[Log Query + Retrieval Metrics]
+```
 
 🔗 Repository:
 https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
