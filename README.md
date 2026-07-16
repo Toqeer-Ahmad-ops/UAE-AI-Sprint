@@ -59,8 +59,10 @@ The focus is on:
 
 # 🚀 Featured Projects
 
-| Project | Repository |
-|---------|------------|
+| Project | Repository | Stack | Status |
+|---------|------------|-------|--------|
+| Enterprise RAG API – Bilingual HR Assistant (EN/AR) | [enterprise-rag-api-bilingual-hr-assistant](https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant) | n8n + Gemini 2.5 Flash + Embedding 2 (768) + Supabase pgvector + Metadata Search | ✅ Complete |
+| End-to-End Arabic Workflow – Dubai Real Estate | [end-to-end-arabic-workflow-dubai](https://github.com/Toqeer-Ahmad-ops/end-to-end-arabic-workflow-dubai) | n8n + Arabic OCR + Gemini | ✅ Complete |
 | Enterprise RAG API – Bilingual HR Assistant | https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant |
 | End-to-End Arabic Workflow | https://github.com/Toqeer-Ahmad-ops/end-to-end-arabic-workflow-dubai |
 
