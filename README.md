@@ -48,9 +48,12 @@ The focus is on:
 |------|----------|------------|--------|
 | Day 1 | AI Automation Foundations | AI Fundamentals | ✅ Complete |
 | Day 2 | n8n Workflow Practice | n8n + JavaScript | ✅ Complete |
-| Day 3 | Enterprise RAG Document Ingestion | n8n + Gemini + Supabase pgvector | ✅ Complete |
-| Day 4 | Enterprise RAG Retrieval API | n8n + Gemini + RAG | ✅ Complete |
-| Day 5 | Enterprise HR Assistant API | Enterprise RAG | 🚧 In Progress |
+| Day 3 | Enterprise RAG Document Ingestion | n8n + Gemini Embedding 2 + Supabase pgvector | ✅ Complete |
+| Day 4 | Enterprise RAG Retrieval API | n8n + RAG + Semantic Search | ✅ Complete |
+| Day 5 | Enterprise HR Assistant API (Bilingual) | n8n + Gemini 2.5 Flash + Metadata RAG | ✅ Complete 
+|
+| Day 6 | Enterprise WhatsApp AI Assistant + RAG | n8n + WhatsApp API + Gemini + RAG | 🚧 In Progress |
+
 
 ---
 
@@ -109,6 +112,35 @@ The workflow:
 🔗 Repository:
 https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
 ---
+## 🧠 Day 5 — Enterprise HR Assistant API (Bilingual) — NEW
+
+**Complete end-to-end bilingual RAG system:**
+
+- Metadata-aware retrieval (filter by project/developer/type)
+- Cross-lingual AR→EN search
+- Grounded, hallucination-resistant answers
+- Enterprise logging + Postman-tested API
+- Handles real Dubai HR documents
+
+**Flow:** PDF Upload → Extract Text → OCR Cleaning → Chunk (1000/200) → Gemini Embedding 2 (768) → Supabase pgvector → User Question → Detect Language (EN/AR) → Query Embedding → Metadata-Aware Vector Search → Build Context → Gemini 2.5 Flash → Grounded Answer → Log Metrics
+
+# 🏗 Architecture
+
+<p align="center">
+  <img src="https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant/blob/main/assets/architecture-v2.png?raw=true" alt="Enterprise Bilingual RAG Architecture" width="100%" />
+</p>
+
+<details>
+<summary>📄 View Mermaid Source</summary>
+
+```mermaid
+flowchart TD
+    A[PDF Upload] --> B[Extract Text From PDF] --> C[OCR Cleaning] --> D[Chunk Documents<br/>1000 / 200] --> E[Gemini Embedding 2<br/>768] --> F[(Supabase pgvector Database)]
+    F --- G[User Question]
+    G --> H[Detect Language<br/>EN / AR] --> I[Gemini Query Embedding] --> J[Metadata-Aware Vector Search] --> K[Build Retrieval Context] --> L[Gemini 2.5 Flash] --> M[Grounded Final Answer] --> N[Log Query + Retrieval Metrics]
+
+🔗 Repository:
+https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
 
 # 🛠️ Skills Demonstrated
 
