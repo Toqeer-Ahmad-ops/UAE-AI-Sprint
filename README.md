@@ -62,6 +62,8 @@ The focus is on:
 | Project | Repository | Stack | Status |
 |---------|------------|-------|--------|
 | Enterprise RAG API – Bilingual HR Assistant (EN/AR) | [enterprise-rag-api-bilingual-hr-assistant](https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant) | n8n + Gemini 2.5 Flash + Embedding 2 (768) + Supabase pgvector + Metadata Search | ✅ Complete |
+| Enterprise RAG API – Dubai Real Estate – Cross-Lingual + Observability (Day 6) | [dubai-real-estate-rag-api](https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-rag-api) | n8n + Gemini 2.5 Flash + Embedding 2 + Qdrant + Supabase + Correlation IDs + RAG Observability | ✅ Complete |
+| Enterprise WhatsApp RAG Bot – Voice + Text – Production (Day 7) | [dubai-real-estate-whatsapp-bot](https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-whatsapp-bot) | n8n 2.39.8 + Whapi Cloud + Groq Whisper STT (2.3s) + Qdrant + Gemini/Groq LLM + Supabase pgvector + Idempotency + Quota Handler | ✅ Complete |
 | End-to-End Arabic Workflow – Dubai Real Estate | [end-to-end-arabic-workflow-dubai](https://github.com/Toqeer-Ahmad-ops/end-to-end-arabic-workflow-dubai) | n8n + Arabic OCR + Gemini | ✅ Complete |
 
 ## 📚 Day 3 — Enterprise RAG Document Ingestion
@@ -124,11 +126,11 @@ https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
 
 **Flow:** PDF Upload → Extract Text → OCR Cleaning → Chunk (1000/200) → Gemini Embedding 2 (768) → Supabase pgvector → User Question → Detect Language (EN/AR) → Query Embedding → Metadata-Aware Vector Search → Build Context → Gemini 2.5 Flash → Grounded Answer → Log Metrics
 
-
-# 🏗 Architecture
+# 🏗️ Architecture
 
 <p align="center">
-  <img src="docs/Day 5 architecture.jpeg" alt="Enterprise Bilingual RAG Architecture" width="100%" /> </p>
+  <img src="docs/Day 5 architecture.jpeg" alt="Enterprise Bilingual RAG Architecture" width="100%" />
+</p>
 
 <details>
 <summary>📄 View Mermaid Source</summary>
@@ -138,9 +140,9 @@ flowchart TD
     A[PDF Upload] --> B[Extract Text From PDF] --> C[OCR Cleaning] --> D[Chunk Documents<br/>1000 / 200] --> E[Gemini Embedding 2<br/>768] --> F[(Supabase pgvector Database)]
     F --- G[User Question]
     G --> H[Detect Language<br/>EN / AR] --> I[Gemini Query Embedding] --> J[Metadata-Aware Vector Search] --> K[Build Retrieval Context] --> L[Gemini 2.5 Flash] --> M[Grounded Final Answer] --> N[Log Query + Retrieval Metrics]
-
-```
 ---
+```
+</details>
 
 🔗 Repository:
 https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
@@ -191,7 +193,7 @@ Repository: https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-whatsapp-bot
 <summary>📸 n8n Workflow + Production Proof</summary>
 <p align="center">
   <img src="docs/whatsapp-workflow.png" alt="n8n Workflow RE-RAG-Bot-DXB-Prod" width="100%" />
-  <img src="docs/whatsapp-11-11am-proof.png" alt="WhatsApp 11:11 am 4 Voice Notes Production Test" width="50%" />
+  <img src="docs/whatsapp-11-11am-proof.jpg" alt="WhatsApp 11:11 am 4 Voice Notes Production Test" width="50%" />
 </p>
 </details>
 
@@ -199,25 +201,27 @@ Repository: https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-whatsapp-bot
 
 # 📈 Current Learning Roadmap
 
-✅ Workflow Automation
+✅ Workflow Automation – n8n 2.39.8 + JavaScript functions
 
-✅ Vector Databases
+✅ Vector Databases – Supabase pgvector + Qdrant + HNSW indexing
 
-✅ Enterprise RAG
+✅ Enterprise RAG – Ingestion (Gemini Embedding 2) + Retrieval + Metadata-aware
 
-✅ API Development
+✅ API Development – RAG API + Observability + Postman-tested + Correlation IDs
 
-✅ Prompt Engineering
+✅ Prompt Engineering – Grounded answers + Bilingual EN/AR + Anti-hallucination
 
-🚧 Enterprise AI Agents
+✅ Enterprise AI Agents – Idempotency + Retry Protection + Quota Handler + Audit Logging
 
-🚧 WhatsApp Automation
+✅ WhatsApp Automation – Whapi Cloud + Webhook + Typing indicators + 4 simultaneous audios
 
-🚧 AI Voice Agents
+✅ AI Voice Agents – STT Groq Whisper (2.3s EN / 2.4s AR) + Voice → Text contract + TTS ElevenLabs (optional, deactivated for cost)
 
-🚧 Multi-Agent Systems
+🚧 Multi-Agent Systems – Supervisor + Sub-agents + Tool orchestration
 
-🚧 MCP Servers
+🚧 MCP Servers – Model Context Protocol + Tool servers + Claude integration
+
+🚧 AI Evaluation – RAGAS + Faithfulness + Latency metrics + Production monitoring
 
 ---
 
