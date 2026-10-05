@@ -51,7 +51,8 @@ The focus is on:
 | Day 3 | Enterprise RAG Document Ingestion | n8n + Gemini Embedding 2 + Supabase pgvector | ✅ Complete |
 | Day 4 | Enterprise RAG Retrieval API | n8n + RAG + Semantic Search | ✅ Complete |
 | Day 5 | Enterprise HR Assistant API (Bilingual) | n8n + Gemini 2.5 Flash + Metadata RAG | ✅ Complete |
-| Day 6 | Enterprise WhatsApp AI Assistant + RAG | n8n + WhatsApp API + Gemini + RAG | 🚧 In Progress |
+| Day 6 | Enterprise RAG API – Cross-Lingual + Observability | n8n + Gemini 2.5 Flash + Embedding 2 + pgvector + CorrelationID | ✅ Complete |
+| Day 7 | Enterprise Dubai Real Estate WhatsApp RAG Bot – Voice + Text | n8n + Whapi Cloud + Groq Whisper + Qdrant + Gemini/Groq + Supabase | ✅ Complete |
 
 
 ---
@@ -123,6 +124,7 @@ https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
 
 **Flow:** PDF Upload → Extract Text → OCR Cleaning → Chunk (1000/200) → Gemini Embedding 2 (768) → Supabase pgvector → User Question → Detect Language (EN/AR) → Query Embedding → Metadata-Aware Vector Search → Build Context → Gemini 2.5 Flash → Grounded Answer → Log Metrics
 
+
 # 🏗 Architecture
 
 <p align="center">
@@ -136,8 +138,8 @@ flowchart TD
     A[PDF Upload] --> B[Extract Text From PDF] --> C[OCR Cleaning] --> D[Chunk Documents<br/>1000 / 200] --> E[Gemini Embedding 2<br/>768] --> F[(Supabase pgvector Database)]
     F --- G[User Question]
     G --> H[Detect Language<br/>EN / AR] --> I[Gemini Query Embedding] --> J[Metadata-Aware Vector Search] --> K[Build Retrieval Context] --> L[Gemini 2.5 Flash] --> M[Grounded Final Answer] --> N[Log Query + Retrieval Metrics]
-```
 
+```
 ---
 
 🔗 Repository:
@@ -159,6 +161,39 @@ https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
 - Docker
 - Semantic Search
 - Bilingual AI (English & Arabic)
+
+---
+Repository: https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-whatsapp-bot
+
+## 🧠 Day 7 – Enterprise Dubai Real Estate WhatsApp RAG Bot (Voice + Text) – NEW
+
+**Complete end-to-end production WhatsApp RAG system:**
+
+- Real WhatsApp Integration (Whapi Cloud + Meta webhook + typing_time=5)
+- Voice → Text – Groq Whisper STT (2.3s EN / 2.4s AR) + 4 simultaneous 0:02 audios handled
+- Bilingual Support – Arabic MSA + Dubai dialect + English, same professional format
+- Idempotency – Supabase message_id unique constraint, no duplicate processing
+- Correlation IDs – Trace across Whapi → n8n → RAG API → Supabase
+- Error Handling + Retry Protection – Gemini quota (429) → Wait 20s → Is Retry <3? → Fallback ⏳🔄⏰📄
+- Professional Answer Formatting – ✅ What is...? 💰 fee 📄 Source: Dubai DLD Fees 2026
+- Observability + Audit Logging – Latency, tokens, language, status, full trace
+- Channel Independent – Same RAG API for website, Telegram, WhatsApp
+
+**Flow:** WhatsApp User (text/voice 0:02) → Whapi Cloud Gateway → ngrok Tunnel → n8n Workflow RE-RAG-Bot-DXB-Prod → Is Text? Is Voice? → Groq Whisper STT → Check Message ID (Supabase) → Already processed? → Stop / Not processed → Call RAG API (Qdrant Vector DB + Gemini/Groq LLM) → Quota Error? → Wait 20s → Retry <3? → Format Professional Answer (JavaScript ✅💰📄) → Send WhatsApp Reply (HTTP) → Log to Supabase (Audit + Observability) → Workflow Complete
+
+# 🏗️ Architecture
+
+<p align="center">
+  <img src="docs/architecture-day7.png" alt="Enterprise WhatsApp RAG Architecture" width="100%" /> </p>
+</p>
+
+<details>
+<summary>📸 n8n Workflow + Production Proof</summary>
+<p align="center">
+  <img src="docs/whatsapp-workflow.png" alt="n8n Workflow RE-RAG-Bot-DXB-Prod" width="100%" />
+  <img src="docs/whatsapp-11-11am-proof.png" alt="WhatsApp 11:11 am 4 Voice Notes Production Test" width="50%" />
+</p>
+</details>
 
 ---
 
