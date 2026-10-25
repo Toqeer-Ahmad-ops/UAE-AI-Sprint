@@ -1,10 +1,19 @@
 # 🚀 30-Day UAE AI Automation Sprint 🇦🇪
 
-[![Location](https://img.shields.io/badge/Location-Dubai,_UAE-black)](https://u.ae/)
-[![n8n](https://img.shields.io/badge/n8n-Automation-EA4B71?logo=n8n)](https://n8n.io/)
-[![RAG](https://img.shields.io/badge/RAG-English_|_Arabic-4285F4)](https://github.com/Toqeer-Ahmad-ops)
-[![Docker](https://img.shields.io/badge/Docker-Self_Hosted-2496ED?logo=docker)](https://www.docker.com/)
-[![Open to Work](https://img.shields.io/badge/Open_to_Work-AI_Automation_Engineer-success)](https://www.linkedin.com/in/toqeer-ahmad-498800220)
+![n8n](https://img.shields.io/badge/n8n-2.39.8-EA4B71?logo=n8n)
+![Gemini](https://img.shields.io/badge/Gemini-3.5%20Flash-4285F4?logo=google)
+![Groq](https://img.shields.io/badge/Groq-Llama%203.1%20Whisper-FF5A5F?logo=groq)
+![Whapi](https://img.shields.io/badge/Whapi-Cloud-25D366?logo=whatsapp)
+![Supabase](https://img.shields.io/badge/Supabase-pgvector%20%2B%20leads-3ECF8E?logo=supabase)
+![Lead Scoring](https://img.shields.io/badge/Lead%20Scoring-JavaScript%20Deterministic-yellow)
+![Grounded](https://img.shields.io/badge/Grounded-91.4%25%20(53%2F58)-success)
+![Persistence](https://img.shields.io/badge/Persistence-Merge%20Preserve-blue)
+![WhatsApp](https://img.shields.io/badge/WhatsApp-Voice%20%2B%20Text%20%2B%20Leads-25D366)
+![HubSpot](https://img.shields.io/badge/HubSpot-CRM%20v3%20Sync-FF7A59?logo=hubspot)
+![SLA Monitor](https://img.shields.io/badge/SLA%20Monitor-Cron%20Overdue-00C853?logo=clockify)
+![Voice Reply](https://img.shields.io/badge/Voice%20Reply-Rename%20%2B%20Whapi-8A2BE2?logo=voicemeeter)
+![Owner Alert](https://img.shields.io/badge/Owner%20Alert-Buttons%20Interactive-FF6B6B?logo=whatsapp)
+![Buttons](https://img.shields.io/badge/Buttons-Click%20Router-orange)
 
 > Building production-grade AI Automation systems for the UAE market using n8n, Google Gemini, Supabase, RAG, and enterprise workflows.
 
@@ -53,7 +62,10 @@ The focus is on:
 | Day 5 | Enterprise HR Assistant API (Bilingual) | n8n + Gemini 2.5 Flash + Metadata RAG | ✅ Complete |
 | Day 6 | Enterprise RAG API – Cross-Lingual + Observability | n8n + Gemini 2.5 Flash + Embedding 2 + pgvector + CorrelationID | ✅ Complete |
 | Day 7 | Enterprise Dubai Real Estate WhatsApp RAG Bot – Voice + Text | n8n + Whapi Cloud + Groq Whisper + Qdrant + Gemini/Groq + Supabase | ✅ Complete |
-
+| Day 8 | Dubai Real Estate Lead Automation – Intake + Qualification | n8n 2.39.8 + Gemini 3.5 Flash + Qdrant + Supabase + Whapi + Merge-Preserve | ✅ Complete |
+| Day 9 | RE-LEAD-Engine-DXB – HubSpot CRM + Voice Reply + SLA Monitor | n8n 2.39.8 + Gemini 3.5 Flash + Groq Whisper + Supabase + HubSpot v3 + Whapi Buttons | ✅ Complete |
+| Day 10 | RE-LEAD-Engine – SLA Idempotency + Owner Alert + Grounded 91.4% | n8n 2.39.8 + HubSpot + SLA Cron + Voice Reply Rename + Whapi | ✅ Complete |
+| Day 11 | FREE Ops Digest Enterprise – No Proxycurl + Finance RAG + DailyOpsDigest | n8n 2.43.5 + Supabase pgvector 768d + Gemini 3.5 Flash Lite FREE + Gmail + ngrok | ✅ Complete |
 
 ---
 
@@ -64,7 +76,11 @@ The focus is on:
 | Enterprise RAG API – Bilingual HR Assistant (EN/AR) | [enterprise-rag-api-bilingual-hr-assistant](https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant) | n8n + Gemini 2.5 Flash + Embedding 2 (768) + Supabase pgvector + Metadata Search | ✅ Complete |
 | Enterprise RAG API – Dubai Real Estate – Cross-Lingual + Observability (Day 6) | [dubai-real-estate-rag-api](https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-rag-api) | n8n + Gemini 2.5 Flash + Embedding 2 + Qdrant + Supabase + Correlation IDs + RAG Observability | ✅ Complete |
 | Enterprise WhatsApp RAG Bot – Voice + Text – Production (Day 7) | [dubai-real-estate-whatsapp-bot](https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-whatsapp-bot) | n8n 2.39.8 + Whapi Cloud + Groq Whisper STT (2.3s) + Qdrant + Gemini/Groq LLM + Supabase pgvector + Idempotency + Quota Handler | ✅ Complete |
-| End-to-End Arabic Workflow – Dubai Real Estate | [end-to-end-arabic-workflow-dubai](https://github.com/Toqeer-Ahmad-ops/end-to-end-arabic-workflow-dubai) | n8n + Arabic OCR + Gemini | ✅ Complete |
+| Dubai Real Estate Lead Automation – Lead Intake + Qualification (Day 8) | [dubai-real-estate-lead-automation](https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-lead-automation) | n8n + Gemini 3.5 Flash + Qdrant/pgvector + Supabase leads + Persistence Merge-Preserve + Whapi | ✅ Complete |
+| RE-LEAD-Engine-DXB – HubSpot + Voice Reply + SLA Monitor (Day 9-10) | [RE-LEAD-Engine-DXB](https://github.com/Toqeer-Ahmad-ops/RE-LEAD-Engine-DXB) | n8n 2.39.8 + Gemini 3.5 Flash + Groq Whisper + Supabase + HubSpot CRM v3 Sync + Whapi Buttons + SLA Cron + Voice Reply | ✅ Complete |
+| FREE Ops Digest Enterprise – No Proxycurl + Finance RAG + DailyOpsDigest (Day 11) | [Enterprise-Dubai-RE-Architecture-FREE-Ops-Digest](https://github.com/Toqeer-Ahmad-ops/Enterprise-Dubai-RE-Architecture-FREE-Ops-Digest) | n8n 2.43.5 + Supabase pgvector 768d + Gemini 3.5 Flash Lite FREE + Finance RAG 7 chunks + DailyOpsDigest 09:10 Dubai + SLA Idempotency 60min + Gmail | ✅ Complete |
+
+---
 
 ## 📚 Day 3 — Enterprise RAG Document Ingestion
 
@@ -87,6 +103,7 @@ Production-ready ingestion pipeline that:
 
 🔗 Repository:
 https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
+
 ---
 
 ## 🤖 Day 4 — Enterprise RAG Retrieval API
@@ -113,7 +130,9 @@ The workflow:
 
 🔗 Repository:
 https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
+
 ---
+
 ## 🧠 Day 5 — Enterprise HR Assistant API (Bilingual) — NEW
 
 **Complete end-to-end bilingual RAG system:**
@@ -126,7 +145,7 @@ https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
 
 **Flow:** PDF Upload → Extract Text → OCR Cleaning → Chunk (1000/200) → Gemini Embedding 2 (768) → Supabase pgvector → User Question → Detect Language (EN/AR) → Query Embedding → Metadata-Aware Vector Search → Build Context → Gemini 2.5 Flash → Grounded Answer → Log Metrics
 
-# 🏗️ Architecture
+# 🏗 Architecture
 
 <p align="center">
   <img src="docs/Day 5 architecture.jpeg" alt="Enterprise Bilingual RAG Architecture" width="100%" />
@@ -140,31 +159,29 @@ flowchart TD
     A[PDF Upload] --> B[Extract Text From PDF] --> C[OCR Cleaning] --> D[Chunk Documents<br/>1000 / 200] --> E[Gemini Embedding 2<br/>768] --> F[(Supabase pgvector Database)]
     F --- G[User Question]
     G --> H[Detect Language<br/>EN / AR] --> I[Gemini Query Embedding] --> J[Metadata-Aware Vector Search] --> K[Build Retrieval Context] --> L[Gemini 2.5 Flash] --> M[Grounded Final Answer] --> N[Log Query + Retrieval Metrics]
----
 ```
+
 </details>
 
 🔗 Repository:
 https://github.com/Toqeer-Ahmad-ops/enterprise-rag-api-bilingual-hr-assistant
 
-# 🛠️ Skills Demonstrated
+---
 
-- n8n Workflow Automation
-- Enterprise AI Automation
-- Google Gemini APIs
-- Retrieval-Augmented Generation (RAG)
-- Prompt Engineering
-- JavaScript
-- REST APIs
-- Supabase
-- PostgreSQL
-- pgvector
-- HNSW Indexing
-- Docker
-- Semantic Search
-- Bilingual AI (English & Arabic)
+## 🔍 Day 6 — Enterprise RAG API – Cross-Lingual + Observability
+
+**Production cross-lingual RAG with enterprise observability:**
+
+- AR MSA + Dubai dialect → EN search
+- Correlation IDs across n8n → RAG API → Supabase
+- RAG Observability: latency, tokens, grounded_rate
+- 44s latency, 0.882 similarity – Enterprise logging
+
+🔗 Repository:
+https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-rag-api
 
 ---
+
 Repository: https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-whatsapp-bot
 
 ## 🧠 Day 7 – Enterprise Dubai Real Estate WhatsApp RAG Bot (Voice + Text) – NEW
@@ -183,10 +200,10 @@ Repository: https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-whatsapp-bot
 
 **Flow:** WhatsApp User (text/voice 0:02) → Whapi Cloud Gateway → ngrok Tunnel → n8n Workflow RE-RAG-Bot-DXB-Prod → Is Text? Is Voice? → Groq Whisper STT → Check Message ID (Supabase) → Already processed? → Stop / Not processed → Call RAG API (Qdrant Vector DB + Gemini/Groq LLM) → Quota Error? → Wait 20s → Retry <3? → Format Professional Answer (JavaScript ✅💰📄) → Send WhatsApp Reply (HTTP) → Log to Supabase (Audit + Observability) → Workflow Complete
 
-# 🏗️ Architecture
+# 🏗 Architecture
 
 <p align="center">
-  <img src="docs/architecture-day7.png" alt="Enterprise WhatsApp RAG Architecture" width="100%" /> </p>
+  <img src="docs/architecture-day7.png" alt="Enterprise WhatsApp RAG Architecture" width="100%" />
 </p>
 
 <details>
@@ -199,23 +216,136 @@ Repository: https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-whatsapp-bot
 
 ---
 
+## 📊 Day 8 – Dubai Real Estate Lead Automation – Intake + Qualification + Persistence
+
+**Production lead automation:**
+
+- Lead Intake from WhatsApp → Validation → Find Existing Lead by `phone` unique
+- Merge-Preserve Logic – preserves previous values if new message missing fields
+- Deterministic Qualification – JS Node `bedrooms && location && budget_max>=1M`
+- Supabase `leads` + `rag_audit_logs` + `processed_messages` – idempotency
+- 91.4% grounded (53/58) carry-over from Day 7
+
+🔗 Repository:
+https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-lead-automation
+
+---
+
+## 📱🏙️ Day 9-10 – RE-LEAD-Engine-DXB – HubSpot CRM + Voice Reply + SLA Monitor
+
+![n8n](https://img.shields.io/badge/n8n-2.39.8-EA4B71?logo=n8n&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-3.5%20Flash-4285F4?logo=google&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-Llama%203.1%20Whisper-FF5A5F?logo=groq&logoColor=white)
+![Whapi](https://img.shields.io/badge/Whapi-Cloud-25D366?logo=whatsapp&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-pgvector%20%2B%20leads-3ECF8E?logo=supabase&logoColor=white)
+![HubSpot](https://img.shields.io/badge/HubSpot-CRM%20v3%20Sync-FF7A59?logo=hubspot&logoColor=white)
+![SLA Monitor](https://img.shields.io/badge/SLA%20Monitor-Cron%20Overdue-00C853?logo=clockify&logoColor=white)
+
+**Day 9 Upgrade vs Day 8:**
+
+- ⏸️ **Pause & Spam Guard** – `Check If Paused` → `Is Lead Paused?` → Prevents duplicate processing
+- 🔘 **Button Click Router** – WhatsApp interactive buttons
+- 🎙️ **Voice Pipeline** – `Is Voice?` → `Download Voice` → `Transcribe` (Groq Whisper 2.3s) → Same as text path
+- 🔎 **HubSpot CRM Sync – NEW** – `HubSpot-Search Contact by Phone` → `IF-Contact Exists?` → `Create or update contact` → `Create deal` → `Code-Owner Message` → `WhatsApp-Owner Alert with Buttons` 📞 Call Lead 🔗 View in HubSpot
+- 🗣️ **Voice Reply – NEW** – `Is Voice Input?` → `Voice Reply` → `Rename Voice` → `Whapi Send Voice`
+- ⏰ **SLA Monitor Cron – NEW** – `Schedule Trigger (every 15min)` → `Get Overdue Leads` → `IF Validation` → `Send Whapi Alert`
+
+🔗 Repository:
+https://github.com/Toqeer-Ahmad-ops/RE-LEAD-Engine-DXB
+
+---
+
+## 📊🏙️ Day 11 – FREE Ops Digest Enterprise – No Proxycurl + Finance RAG + DailyOpsDigest + SLA Idempotency – NEW
+
+![n8n](https://img.shields.io/badge/n8n-2.43.5-EA4B71?logo=n8n&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-3.5%20Flash%20Lite%20FREE-4285F4?logo=google&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-pgvector%20768d%20%2B%20finance_docs-3ECF8E?logo=supabase&logoColor=white)
+![No Proxycurl](https://img.shields.io/badge/No%20Proxycurl-FREE%20Stack-00E676?logo=freecodecamp&logoColor=white)
+![Finance RAG](https://img.shields.io/badge/Finance%20RAG-7%20chunks%20%7C%200.82%20similarity-success?logo=openai&logoColor=white)
+![DailyOpsDigest](https://img.shields.io/badge/DailyOpsDigest-09:10%20Dubai-orange?logo=gmail&logoColor=white)
+![SLA Idempotency](https://img.shields.io/badge/SLA%20Idempotency-60min%20%7C%201%20max%2Fhour-00C853?logo=clockify&logoColor=white)
+![Gmail Ops](https://img.shields.io/badge/Gmail%20Ops-ta172592d2eb3ca5-critical?logo=gmail&logoColor=white)
+
+**FREE Stack – No $49/mo Proxycurl – Production-grade Dubai Lead Automation:**
+
+- 📥 **IntakeAPI** – `POST /v1/leads` → Validate → Normalize Enterprise (HubSpot/Zoho/Odoo/M365) → Supabase `leads` `on_conflict=phone` + `idempotency_key` → Trigger Scoring FREE `day11-lead-trigger-free` → **200 OK 1.81s** `ca252bb3-8fee-41b1-8b93-4b46ed00ce8b`
+- 🧮 **FREE Scoring** – `Cron 2min + Webhook FREE` → Get Unscored → `Regex Score FREE` → `Gemini Refine` → `Set Band` HOT/WARM/COLD → Supabase Upsert `lead_scores` `?on_conflict=lead_id` + `Prefer: merge-duplicates` – Formula `relevance*0.6 + confidence*0.4` = **95 Hot 3.603s** `2219e410`
+- 💰 **Finance RAG – FIXED** – `Code Chunk 2k` → `Gemini Embedding 768d` → `HTTP Raw JSON.stringify({filename, content, embedding})` → Supabase `finance_docs` **7 chunks** → `match_finance_docs` RPC – Fixed PGRST102
+- 📊 **DailyOpsDigest – NEW** – `Cron 10 5 * * * = 09:10 Dubai` → `get_daily_ops_metrics()` + `get_top_action_leads()` 5 items + `get_sla_breached_leads()` → `Code Build HTML SAFE getJsons()` → `Gmail Action Day` **id ta172592d2eb3ca5** – Subject `📊 5 Hot Leads to Call Today – 23/10/2026`
+- 🛡️ **SLA Idempotency – NEW** – `Cron * * * * *` → `get_sla_breached_leads()` → `IF Any Breach?` → `Log sla_alert_log` `Prefer: ignore-duplicates` `UNIQUE hour` → `Gmail Alert` – **60 emails/hour → 1 max/hour** – False Branch healthy skip = 0 spam
+
+# 🏗 Architecture – Day 11
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Toqeer-Ahmad-ops/Enterprise-Dubai-RE-Architecture-FREE-Ops-Digest/main/docs/day11/architecture-light.png" alt="Day 11 FREE Ops Digest Architecture Light" width="100%" />
+  <img src="https://raw.githubusercontent.com/Toqeer-Ahmad-ops/Enterprise-Dubai-RE-Architecture-FREE-Ops-Digest/main/docs/day11/architecture-dark.png" alt="Day 11 FREE Ops Digest Architecture Dark" width="100%" />
+</p>
+
+```mermaid
+flowchart TD
+    A[Lead Sources HubSpot Zoho Odoo M365 Postman] --> B[IntakeAPI Webhook POST v1/leads Raw Body OFF]
+    B --> C[Supabase leads insert on_conflict=phone idempotency_key]
+    C --> D[Trigger Scoring FREE day11-lead-trigger-free ngrok-skip-browser-warning]
+    D --> E[Day11-01 FREE Scoring Webhook + Cron 2min]
+    E --> F[Get Unscored leads]
+    F --> G[Regex Score FREE]
+    G --> H[Gemini Refine + Set Band HOT]
+    H --> I[Supabase Upsert lead_scores ?on_conflict=lead_id Prefer merge-duplicates]
+    J[Day11-02 Finance RAG Code Chunk 2k] --> K[Gemini Embedding 768d]
+    K --> L[HTTP Supabase finance_docs JSON.stringify filename content embedding.values]
+    L --> M[Supabase pgvector 7 chunks + match_finance_docs RPC]
+    I --> N[Day11-05 Formula Score Every 10m relevance*0.6 + confidence*0.4]
+    M --> N
+    N --> O[Day11-04b DailyOpsDigest Cron 10 5 * * * = 09:10 Dubai]
+    O --> P[RPC get_daily_ops_metrics Dubai Today]
+    O --> Q[RPC get_top_action_leads 5 items]
+    O --> R[RPC get_sla_breached_leads Always Output Data ON]
+    P & Q & R --> S[Code Build HTML Enterprise SAFE getJsons]
+    S --> T[IF isNoLeadDay=false TRUE]
+    T --> U[Gmail Action Day ta172592d2eb3ca5 5 Hot Leads]
+    V[Day10-05 SLA Cron Idempotent Cron Every 1 Min] --> W[Get Breached Leads]
+    W --> X[IF Any Breach?]
+    X -->|True| Y[Log Alert sla_alert_log Prefer ignore-duplicates UNIQUE hour]
+    Y --> Z[Gmail SLA Alert]
+    X -->|False Empty Item| AA[Healthy Skip 0 spam]
+```
+
+### 📊 Results – Day 11 – All Green
+
+| Workflow | Exec | Latency | Proof |
+|:---|:---|:---|:---|
+| IntakeAPI | #3516 20:28:10 | **1.81s** 200 OK | `ca252bb3` |
+| FREE Scoring | 21:28:39 | **3.603s 95 Hot** | `2219e410` |
+| Finance RAG | 7/7 chunks | **768d >0.82** | 7 rows |
+| DailyOpsDigest | 17:26:56 | **5.666s** | `ta172592d2eb3ca5` SENT |
+| SLA Monitor | False Branch | **0 spam** | 60min idempotent |
+
+🔗 Repository:
+https://github.com/Toqeer-Ahmad-ops/Enterprise-Dubai-RE-Architecture-FREE-Ops-Digest
+
+---
+
 # 📈 Current Learning Roadmap
 
-✅ Workflow Automation – n8n 2.39.8 + JavaScript functions
+✅ Workflow Automation – n8n 2.43.5 + JavaScript functions + SAFE getJsons() + Always Output Data ON
 
-✅ Vector Databases – Supabase pgvector + Qdrant + HNSW indexing
+✅ Vector Databases – Supabase pgvector 768d + Qdrant + HNSW indexing + finance_docs 7 chunks
 
-✅ Enterprise RAG – Ingestion (Gemini Embedding 2) + Retrieval + Metadata-aware
+✅ Enterprise RAG – Ingestion (Gemini Embedding 2) + Retrieval + Metadata-aware + Finance RAG 0.82 similarity
 
-✅ API Development – RAG API + Observability + Postman-tested + Correlation IDs
+✅ API Development – RAG API + IntakeAPI 1.81s + Observability + Postman-tested + Correlation IDs + ngrok
 
-✅ Prompt Engineering – Grounded answers + Bilingual EN/AR + Anti-hallucination
+✅ Lead Scoring FREE – Regex + Gemini Refine + Formula relevance*0.6 + confidence*0.4 + 95 Hot + No Proxycurl
 
-✅ Enterprise AI Agents – Idempotency + Retry Protection + Quota Handler + Audit Logging
+✅ DailyOpsDigest + SLA Idempotency – Cron 09:10 Dubai + get_daily_ops_metrics() + get_top_action_leads() + get_sla_breached_leads() + Gmail + UNIQUE hour
 
-✅ WhatsApp Automation – Whapi Cloud + Webhook + Typing indicators + 4 simultaneous audios
+✅ Prompt Engineering – Grounded answers + Bilingual EN/AR + Anti-hallucination + Finance RAG
 
-✅ AI Voice Agents – STT Groq Whisper (2.3s EN / 2.4s AR) + Voice → Text contract + TTS ElevenLabs (optional, deactivated for cost)
+✅ Enterprise AI Agents – Idempotency + Retry Protection + Quota Handler + Audit Logging + Response Immediately
+
+✅ WhatsApp Automation – Whapi Cloud + Webhook + Typing indicators + 4 simultaneous audios + Buttons Click Router + Owner Alert
+
+✅ AI Voice Agents – STT Groq Whisper (2.3s EN / 2.4s AR) + Voice → Text contract + Voice Reply Rename + Whapi Send Voice
 
 🚧 Multi-Agent Systems – Supervisor + Sub-agents + Tool orchestration
 
@@ -233,7 +363,8 @@ Projects are designed around real UAE business scenarios such as:
 - Employee Handbooks
 - SOP Search
 - Internal Knowledge Bases
-- Real Estate
+- Real Estate Lead Automation – FREE Stack
+- Finance RAG + Ops Digest
 - Healthcare
 - Legal Documents
 - Customer Support Automation
