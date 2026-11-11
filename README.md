@@ -66,6 +66,7 @@ The focus is on:
 | Day 9 | RE-LEAD-Engine-DXB – HubSpot CRM + Voice Reply + SLA Monitor | n8n 2.39.8 + Gemini 3.5 Flash + Groq Whisper + Supabase + HubSpot v3 + Whapi Buttons | ✅ Complete |
 | Day 10 | RE-LEAD-Engine – SLA Idempotency + Owner Alert + Grounded 91.4% | n8n 2.39.8 + HubSpot + SLA Cron + Voice Reply Rename + Whapi | ✅ Complete |
 | Day 11 | FREE Ops Digest Enterprise – No Proxycurl + Finance RAG + DailyOpsDigest | n8n 2.43.5 + Supabase pgvector 768d + Gemini 3.5 Flash Lite FREE + Gmail + ngrok | ✅ Complete |
+| Day 12 | Dubai Deal Desk – Supervisor Lite + Human Approval | n8n 2.43.5 + Supabase PostgreSQL + Telegram Bot + Idempotency Gate | ✅ Complete |
 
 ---
 
@@ -79,6 +80,7 @@ The focus is on:
 | Dubai Real Estate Lead Automation – Lead Intake + Qualification (Day 8) | [dubai-real-estate-lead-automation](https://github.com/Toqeer-Ahmad-ops/dubai-real-estate-lead-automation) | n8n + Gemini 3.5 Flash + Qdrant/pgvector + Supabase leads + Persistence Merge-Preserve + Whapi | ✅ Complete |
 | RE-LEAD-Engine-DXB – HubSpot + Voice Reply + SLA Monitor (Day 9-10) | [RE-LEAD-Engine-DXB](https://github.com/Toqeer-Ahmad-ops/RE-LEAD-Engine-DXB) | n8n 2.39.8 + Gemini 3.5 Flash + Groq Whisper + Supabase + HubSpot CRM v3 Sync + Whapi Buttons + SLA Cron + Voice Reply | ✅ Complete |
 | FREE Ops Digest Enterprise – No Proxycurl + Finance RAG + DailyOpsDigest (Day 11) | [Enterprise-Dubai-RE-Architecture-FREE-Ops-Digest](https://github.com/Toqeer-Ahmad-ops/Enterprise-Dubai-RE-Architecture-FREE-Ops-Digest) | n8n 2.43.5 + Supabase pgvector 768d + Gemini 3.5 Flash Lite FREE + Finance RAG 7 chunks + DailyOpsDigest 09:10 Dubai + SLA Idempotency 60min + Gmail | ✅ Complete |
+| Dubai Deal Desk – Supervisor Lite + Human Approval (Day 12) | [Enterprise-Dubai-Deal-Desk-FREE-Supervisor-Lite](https://github.[STRIPPED 68 bytes]) | n8n 2.43.5 + Supabase PostgreSQL + Telegram Bot + Idempotency Gate + Approval Queue + SLA | ✅ Complete |
 
 ---
 
@@ -322,6 +324,56 @@ flowchart TD
 
 🔗 Repository:
 https://github.com/Toqeer-Ahmad-ops/Enterprise-Dubai-RE-Architecture-FREE-Ops-Digest
+
+---
+
+## 📊🏙 Day 12 – Dubai Deal Desk – Supervisor Lite + Human Approval – FREE Stack – NEW
+
+![n8n](https://img.shields.io/badge/n8n-2.43.5-EA4B71?logo=n8n&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?logo=supabase&logoColor=white)
+![Telegram](https://img.shields.io/badge/Telegram-Bot_API-26A5E4?logo=telegram&logoColor=white)
+![Idempotency](https://img.shields.io/badge/Idempotency-0_Spam-blue?logo=clockify&logoColor=white)
+![Approval](https://img.shields.io/badge/Approval-pending_→_approved%2Frejected-orange?logo=checkmarx&logoColor=white)
+![FREE Stack](https://img.shields.io/badge/FREE_Stack-No_Whapi_$35-00E676?logo=freecodecamp&logoColor=white)
+
+**FREE Stack – Telegram replaces $35/mo Whapi – Production-grade Supervisor Lite:**
+
+- 📥 **Day12-01 RE Leads Supervisor Lite – REAL, Production** – `Cron 10 5 * * * = 09:10 Dubai` → `RPC get_daily_ops_metrics()` + `get_top_action_leads()` + `get_sla_breached_leads()` → `Merge` → `Formatter Generic` Bilingual EN/AR → `Log Approval Queue` → `Check Duplicate` Supabase → `IF Duplicate?` → `Telegram Dispatch` – **28 leads, SLA breach in 1 min, Score 95 Hot**
+- 💰 **Day12-02 Finance Approval – SIMULATED, honestly labelled** – `Cron 15 5 * * * = 09:15 Dubai` → `Get Overdue Expenses` → `Formatter Generic Finance` → `Log Approval Queue` → `Check Duplicate` → `Telegram` – **EXP-1201 AED 12000 Overdue Conf 0.82 | EXP-1202 AED 8500** – ✅ Approve / ❌ Reject – human decides, not bot
+- 📦 **Day12-03 Order Processing – SIMULATED** – `Cron 20 5 * * * = 09:20 Dubai` → `Get Order Items` → `Formatter Generic Order` → `Log Approval Queue` → `Check Duplicate` → `Telegram` – **ORD-8821 payment_failed AED 450 + ORD-8822 stock_short AED 1200 | At Risk AED 1650** – ✅ Resolve / ❌ Escalate
+- ⚠️ **Day12-00 Error Trigger Admin** – Production only. Short error. No JSON dump. No secrets. Logs to `error_logs` + Telegram Admin Alert
+- 🛡 **Idempotency Gate – NEW** – `Check Duplicate` BEFORE Telegram → `UNIQUE(lead_id, alert_type, hour, channel)` `ux_notification_log_hour` – **1st Run = Telegram ✅ / 2nd Run Same Hour = Set Skipped, Telegram 0 ✅ / 0 Spam** – Fixed first-run 50-message spam bug
+
+# 🏗 Architecture – Day 12
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Toqeer-Ahmad-ops/Enterprise-Dubai-Deal-Desk-FREE-Supervisor-Lite/main/screenshots/01-Architecture-Day12-Light.png" alt="Day 12 Architecture Light" width="100%" />
+  <img src="https://raw.githubusercontent.com/Toqeer-Ahmad-ops/Enterprise-Dubai-Deal-Desk-FREE-Supervisor-Lite/main/screenshots/02-Architecture-Day12-Dark.png" alt="Day 12 System Flow Dark" width="100%" />
+</p>
+
+```mermaid
+flowchart LR
+    Cron["Cron 09:10 / 09:15 / 09:20 Dubai<br/>+ Manual Trigger"] --> RPCs["Supabase RPCs<br/>get_daily_ops_metrics<br/>get_top_action_leads<br/>get_sla_breached_leads"]
+    RPCs --> Formatter["Formatter Generic<br/>Bilingual EN/AR<br/>Score 95 Hot, SLA, HTML"]
+    Formatter --> ApprovalQueue["approval_queue<br/>pending → approved / rejected"]
+    ApprovalQueue --> Gate["Idempotency Gate<br/>Check Duplicate<br/>UNIQUE alert_type + channel + hour"]
+    Gate -->|1st Run| Telegram["Telegram Bot<br/>Dubai Deal Desk<br/>Approve / Reject / Resolve / Escalate"]
+    Gate -->|2nd Run Same Hour| Skipped["Set Skipped<br/>Telegram 0, 0 Spam"]
+    Telegram --> Logs["Logs<br/>notification_log<br/>sla_alert_log<br/>error_logs"]
+    Logs --> Dashboard["v_deployments_dashboard"]
+```
+
+### 📊 Results – Day 12 – All Green After Fix
+
+| Workflow | Exec | Latency | Proof |
+|:---|:---|:---|:---|
+| Day12-01 RE Leads | #29392 09:29:15 | 2.433s Succeeded | Version `46b00ff3` Published, Supabase notification_log, Set Skipped|
+| Day12-02 Finance | #26684 14:06:36 | 1.425s Succeeded | Set Skipped, Telegram 0, 2nd run |
+| Day12-03 Order | #28156 05:20:00 | 1.763s Succeeded | Set Skipped, Telegram 0, 2nd run |
+| Day12-00 Error Admin | Production only | — | Short error, no secrets, error_logs |
+
+🔗 Repository:
+[https://github.com/Toqeer-Ahmad-ops/Enterprise-Dubai-RE-Architecture-FREE-Ops-Digest](https://github.com/Toqeer-Ahmad-ops/Enterprise-Dubai-Deal-Desk-FREE-Supervisor-Lite)
 
 ---
 
