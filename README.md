@@ -1,7 +1,7 @@
 # 🚀 30-Day UAE AI Automation Sprint 🇦🇪
 
-![n8n](https://img.shields.io/badge/n8n-2.39.8-EA4B71?logo=n8n)
-![Gemini](https://img.shields.io/badge/Gemini-3.5%20Flash-4285F4?logo=google)
+![n8n](https://img.shields.io/badge/n8n-2.43.5-EA4B71?logo=n8n)
+![Gemini](https://img.shields.io/badge/Gemini-3.5%20Flash%20Lite%20FREE-4285F4?logo=google)
 ![Groq](https://img.shields.io/badge/Groq-Llama%203.1%20Whisper-FF5A5F?logo=groq)
 ![Whapi](https://img.shields.io/badge/Whapi-Cloud-25D366?logo=whatsapp)
 ![Supabase](https://img.shields.io/badge/Supabase-pgvector%20%2B%20leads-3ECF8E?logo=supabase)
@@ -14,6 +14,12 @@
 ![Voice Reply](https://img.shields.io/badge/Voice%20Reply-Rename%20%2B%20Whapi-8A2BE2?logo=voicemeeter)
 ![Owner Alert](https://img.shields.io/badge/Owner%20Alert-Buttons%20Interactive-FF6B6B?logo=whatsapp)
 ![Buttons](https://img.shields.io/badge/Buttons-Click%20Router-orange)
+![Supervisor Lite](https://img.shields.io/badge/Supervisor%20Lite-Day%2012%20Complete-00C853?logo=n8n&logoColor=white)
+![Telegram](https://img.shields.io/badge/Telegram-Bot%20API-26A5E4?logo=telegram&logoColor=white)
+![Human Approval](https://img.shields.io/badge/Human%20Approval-pending%20→%20approved%2Frejected-orange?logo=checkmarx&logoColor=white)
+![Idempotency](https://img.shields.io/badge/Idempotency-0%20Spam%20%7C%20Set%20Skipped-blue?logo=clockify&logoColor=white)
+![FREE Stack](https://img.shields.io/badge/FREE%20Stack-No%20Proxycurl-00E676?logo=freecodecamp&logoColor=white)
+![DailyOpsDigest](https://img.shields.io/badge/DailyOpsDigest-09%3A10%20Dubai-orange?logo=gmail&logoColor=white)
 
 > Building production-grade AI Automation systems for the UAE market using n8n, Google Gemini, Supabase, RAG, and enterprise workflows.
 
