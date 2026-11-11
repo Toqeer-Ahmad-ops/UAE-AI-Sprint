@@ -279,8 +279,8 @@ https://github.com/Toqeer-Ahmad-ops/RE-LEAD-Engine-DXB
 # 🏗 Architecture – Day 11
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Toqeer-Ahmad-ops/Enterprise-Dubai-RE-Architecture-FREE-Ops-Digest/main/docs/day11/architecture-light.png" alt="Day 11 FREE Ops Digest Architecture Light" width="100%" />
-  <img src="https://raw.githubusercontent.com/Toqeer-Ahmad-ops/Enterprise-Dubai-RE-Architecture-FREE-Ops-Digest/main/docs/day11/architecture-dark.png" alt="Day 11 FREE Ops Digest Architecture Dark" width="100%" />
+  <img src="docs/day11/architecture-light.jpg" alt="Day 11 FREE Ops Digest Architecture Light" width="100%" />
+  <img src="docs/day11/architecture-dark.jpg" alt="Day 11 FREE Ops Digest Architecture Dark" width="100%" />
 </p>
 
 ```mermaid
@@ -347,8 +347,8 @@ https://github.com/Toqeer-Ahmad-ops/Enterprise-Dubai-RE-Architecture-FREE-Ops-Di
 # 🏗 Architecture – Day 12
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Toqeer-Ahmad-ops/Enterprise-Dubai-Deal-Desk-FREE-Supervisor-Lite/main/screenshots/01-Architecture-Day12-Light.png" alt="Day 12 Architecture Light" width="100%" />
-  <img src="https://raw.githubusercontent.com/Toqeer-Ahmad-ops/Enterprise-Dubai-Deal-Desk-FREE-Supervisor-Lite/main/screenshots/02-Architecture-Day12-Dark.png" alt="Day 12 System Flow Dark" width="100%" />
+  <img src="docs/day12/architecture-light.jpg" alt="Day 12 Architecture Light" width="100%" />
+  <img src="docs/day12/architecture-dark.jpg" alt="Day 12 System Flow Dark" width="100%" />
 </p>
 
 ```mermaid
