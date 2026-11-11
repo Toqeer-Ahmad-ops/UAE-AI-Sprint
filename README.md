@@ -391,6 +391,10 @@ flowchart LR
 
 ✅ DailyOpsDigest + SLA Idempotency – Cron 09:10 Dubai + get_daily_ops_metrics() + get_top_action_leads() + get_sla_breached_leads() + Gmail + UNIQUE hour
 
+✅ Supervisor Lite + Human Approval (Day 12) – Cron 09:10 / 09:15 / 09:20 Dubai + approval_queue pending → approved / rejected + RE Leads REAL + Finance + Order SIMULATED + Human decides, not bot
+
+✅ Telegram Automation + Idempotency Gate (Day 12) – Telegram Bot API + Approve / Reject / Resolve / Escalate + Check Duplicate BEFORE Telegram + UNIQUE hour + 1st Run Telegram ✅ / 2nd Run Set Skipped 0 Spam + Error Trigger Admin
+
 ✅ Prompt Engineering – Grounded answers + Bilingual EN/AR + Anti-hallucination + Finance RAG
 
 ✅ Enterprise AI Agents – Idempotency + Retry Protection + Quota Handler + Audit Logging + Response Immediately
@@ -399,11 +403,11 @@ flowchart LR
 
 ✅ AI Voice Agents – STT Groq Whisper (2.3s EN / 2.4s AR) + Voice → Text contract + Voice Reply Rename + Whapi Send Voice
 
-🚧 Multi-Agent Systems – Supervisor + Sub-agents + Tool orchestration
+🚧 Multi-Agent Systems – Supervisor Lite DONE (single supervisor) + Sub-agents + Tool orchestration – Day 13 next
 
 🚧 MCP Servers – Model Context Protocol + Tool servers + Claude integration
 
-🚧 AI Evaluation – RAGAS + Faithfulness + Latency metrics + Production monitoring
+🚧 AI Evaluation – Day 12-16 Matrix started + RAGAS + Faithfulness + Latency metrics + Production monitoring – Day 12 rows 1-8: 6 Pass, 2 Not Run
 
 ---
 
